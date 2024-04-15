@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TodoApp</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+  </head>
+  <body>
+    <main class="main">
+      <div class="container">
+        <section class="todo-container">
+          <h2 class="todo-title">Todo App</h2>
+          <div class="todo-content">
+            <input
+              type="text"
+              placeholder="Buscar mis notas"
+              autocomplete="off"
+              class="todo-input"
+              id="todo-input"
+              required
+            />
+            <div class="todo-button-option">
+              <button class="todo-button-done-all" id="todo-button-done-all">
+                <span class="task-icon material-symbols-outlined">
+                  done_all
+                </span>
+              </button>
+              <button class="todo-button-all" id="todo-button-all">
+                Todos
+              </button>
+            </div>
+            <div class="message hidden" id="message">
+              <p class="message-text" id="message-text"></p>
+            </div>
+            <ul class="todo-list" id="todo-list"></ul>
+          </div>
+          <button class="todo-button-add" id="todo-button-add">+</button>
+        </section>
+      </div>
+      <section class="form-todo-add hidden" id="form-todo-add">
+        <form id="form">
+          <div class="form-close" id="form-close">
+            <span class="icon material-symbols-outlined" id="form-icon-close">
+              close
+            </span>
+          </div>
+          <div class="form-content">
+            <input
+              type="text"
+              placeholder="Introduce una tarea por realizar"
+              id="form-todo-input"
+              autocomplete="off"
+            />
+            <button id="form-button-save">Guardar</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>Oscar Baez @2024</p>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
